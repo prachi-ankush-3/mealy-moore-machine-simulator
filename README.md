@@ -243,7 +243,7 @@ mealy-moore-simulator/
 ### 1. Clone the repository
 
 ```bash
-git clone <https://github.com/prachi-ankush-3/mealy-moore-machine-simulator.git>
+git clone https://github.com/prachi-ankush-3/mealy-moore-machine-simulator.git
 ```
 
 ### 2. Navigate to the project
