@@ -136,9 +136,11 @@ Here:
 
 # 🖥️ Application Screenshots
 
+The following screenshots demonstrate the main features and outputs of the Mealy–Moore Machine Simulator.
+
 ## 🏠 1. Dashboard
 
-The dashboard provides an overview of the simulator and quick access to the available modules.
+The dashboard provides an overview of the simulator and quick access to its main modules.
 
 <p align="center">
   <img src="./screenshots/dashboard.png" alt="Dashboard" width="900">
@@ -148,7 +150,7 @@ The dashboard provides an overview of the simulator and quick access to the avai
 
 ## 🛠️ 2. Machine Builder
 
-The Machine Builder allows users to create Mealy and Moore machines by defining states and transitions.
+The Machine Builder allows users to create and configure Mealy and Moore machines by adding states and transitions.
 
 <p align="center">
   <img src="./screenshots/machine-builder.png" alt="Machine Builder" width="900">
@@ -188,13 +190,11 @@ The Conversion Lab demonstrates the conversion of a Mealy Machine into a Moore M
 
 ## ⚖️ 6. Compare Machines
 
-The Compare Machines module allows users to compare two finite-state machines.
+The Compare Machines module allows users to compare two finite-state machines and analyze their structure and behaviour.
 
 <p align="center">
   <img src="./screenshots/comparison.png" alt="Compare Machines" width="900">
 </p>
-
----
 
 # 🛠️ Technologies Used
 
