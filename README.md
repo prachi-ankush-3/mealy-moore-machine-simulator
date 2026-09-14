@@ -143,7 +143,7 @@ The following screenshots demonstrate the main features and outputs of the Mealy
 The dashboard provides an overview of the simulator and quick access to its main modules.
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" alt="Dashboard" width="900">
+  <img src="mealy-moore-simulator/screenshots/dashboard.png" alt="Dashboard" width="900">
 </p>
 
 ---
@@ -153,7 +153,7 @@ The dashboard provides an overview of the simulator and quick access to its main
 The Machine Builder allows users to create and configure Mealy and Moore machines by adding states and transitions.
 
 <p align="center">
-  <img src="./screenshots/machine-builder.png" alt="Machine Builder" width="900">
+  <img src="mealy-moore-simulator/screenshots/machine-builder.png" alt="Machine Builder" width="900">
 </p>
 
 ---
@@ -163,7 +163,7 @@ The Machine Builder allows users to create and configure Mealy and Moore machine
 The Simulator allows users to enter an input string and execute the selected finite-state machine.
 
 <p align="center">
-  <img src="./screenshots/simulator.png" alt="Simulator" width="900">
+  <img src="mealy-moore-simulator/screenshots/simulator.png" alt="Simulator" width="900">
 </p>
 
 ---
@@ -173,7 +173,7 @@ The Simulator allows users to enter an input string and execute the selected fin
 The simulation result displays the execution steps, state transitions, generated output, and final result.
 
 <p align="center">
-  <img src="./screenshots/simulation-result.png" alt="Simulation Result" width="900">
+  <img src="mealy-moore-simulator/screenshots/simulation-result.png" alt="Simulation Result" width="900">
 </p>
 
 ---
@@ -183,7 +183,7 @@ The simulation result displays the execution steps, state transitions, generated
 The Conversion Lab demonstrates the conversion of a Mealy Machine into a Moore Machine.
 
 <p align="center">
-  <img src="./screenshots/conversion.png" alt="Conversion Lab" width="900">
+  <img src="mealy-moore-simulator/screenshots/conversion.png" alt="Conversion Lab" width="900">
 </p>
 
 ---
@@ -193,7 +193,7 @@ The Conversion Lab demonstrates the conversion of a Mealy Machine into a Moore M
 The Compare Machines module allows users to compare two finite-state machines and analyze their structure and behaviour.
 
 <p align="center">
-  <img src="./screenshots/comparison.png" alt="Compare Machines" width="900">
+  <img src="mealy-moore-simulator/screenshots/comparison.png" alt="Compare Machines" width="900">
 </p>
 
 # 🛠️ Technologies Used
