@@ -1,29 +1,27 @@
 # 🔄 Mealy–Moore Machine Simulator
 
-A web-based **Finite State Machine Simulator** built with React and Vite to create, simulate, convert, compare, and save **Mealy and Moore Machines**.
-
-The project provides an interactive interface for understanding **Finite Automata and Sequential Machines** through visual state diagrams, step-by-step simulation, and automatic Mealy ↔ Moore conversion.
+A web-based **Mealy–Moore Machine Simulator** built using React and Vite.
+This project provides an interactive platform to create, simulate, convert, and compare Mealy and Moore machines.
 
 ---
 
 ## 📌 Project Overview
 
-The **Mealy–Moore Simulator** is designed as an educational tool for students and developers studying **Theory of Computation (TOC)** and **Finite State Machines**.
+The **Mealy–Moore Machine Simulator** is an educational web application developed to make **Theory of Computation and Finite State Machines** easier to understand through an interactive interface.
 
-The simulator allows users to:
+The application allows users to:
 
 * Create Mealy and Moore machines
-* Add and edit states
+* Add and manage states
 * Create transitions
-* Define input and output alphabets
+* Define input and output symbols
 * Validate machines
 * Simulate input strings
 * View step-by-step execution
 * Convert Mealy machines to Moore machines
 * Compare two machines
-* Save and manage machines
-* Import/export machine data
-* View documentation about Mealy and Moore machines
+* Save machine configurations
+* Import and export machine data
 
 ---
 
@@ -31,87 +29,64 @@ The simulator allows users to:
 
 ### 🏠 Dashboard
 
-Provides an overview of the simulator and quick access to the main modules.
+Provides quick access to the major modules of the simulator.
 
 ### 🛠️ Machine Builder
 
-Create a custom finite state machine using an interactive builder.
+Allows users to visually create and configure finite-state machines.
 
-**Supported operations:**
+**Features include:**
 
 * Add states
-* Delete states
-* Edit state names
+* Remove states
 * Set initial state
 * Set final state
-* Define state outputs for Moore machines
-* Create transitions
-* Define input/output symbols
+* Add transitions
+* Define input symbols
+* Define output symbols
 * Validate machine structure
 
 ### ▶️ Simulator
 
-Run an input string through the selected machine and observe its execution.
+Allows users to execute an input string on the selected machine.
 
-The simulator provides:
+The simulator displays:
 
 * Current state
 * Input symbol
-* Transition taken
-* Output generated
-* States visited
-* Transitions used
-* Final state
-* Complete simulation steps
+* Transition
+* Generated output
+* State sequence
+* Simulation steps
+* Final result
 
 ### 🔄 Conversion Lab
 
-Convert a **Mealy Machine into a Moore Machine**.
-
-The conversion module provides a detailed conversion log showing how new Moore states and transitions are generated.
+Converts a **Mealy Machine into a Moore Machine** and displays the conversion process.
 
 ### ⚖️ Compare Machines
 
-Compare two machines based on their:
-
-* Machine type
-* States
-* Transitions
-* Input alphabet
-* Output alphabet
-* Behaviour for given inputs
+Allows users to compare two machines based on their structure and behaviour.
 
 ### 💾 Saved Machines
 
-Save created machines and access them later without rebuilding them from scratch.
-
-### 📚 Documentation
-
-Built-in documentation explains important concepts related to:
-
-* Mealy Machines
-* Moore Machines
-* States
-* Transitions
-* Input and output alphabets
-* Machine simulation
-* Machine conversion
+Allows created machines to be stored and reused later.
 
 ### 📥 Import / Export
 
-Machine configurations can be exported and imported using JSON data, making it easier to share or reuse machines.
+Machine configurations can be imported and exported using JSON data.
 
 ---
 
 # 🧠 Mealy Machine
 
-A **Mealy Machine** is a finite-state machine where the output depends on:
+A **Mealy Machine** is a finite-state machine in which the output depends on both the current state and the input.
 
-> **Current State + Input**
+```text
+Current State + Input → Output + Next State
+```
 
-The output is associated with a **transition**.
-
-### Example
+Example:
 
 ```text
 q0 -- 1/0 --> q1
@@ -119,22 +94,22 @@ q0 -- 1/0 --> q1
 
 Here:
 
+* `q0` = Current State
 * `1` = Input
 * `0` = Output
-* `q0` = Current State
 * `q1` = Next State
 
 ---
 
 # 🧠 Moore Machine
 
-A **Moore Machine** is a finite-state machine where the output depends only on:
+A **Moore Machine** is a finite-state machine in which the output depends only on the current state.
 
-> **Current State**
+```text
+Current State → Output
+```
 
-The output is associated with a **state**.
-
-### Example
+Example:
 
 ```text
 q0 / 0
@@ -143,149 +118,111 @@ q0 / 0
 Here:
 
 * `q0` = State
-* `0` = Output of the state
+* `0` = Output
 
 ---
 
 # 🔄 Mealy vs Moore
 
-| Feature                | Mealy Machine   | Moore Machine    |
-| ---------------------- | --------------- | ---------------- |
-| Output depends on      | State + Input   | State            |
-| Output associated with | Transition      | State            |
-| Output changes         | With transition | With state       |
-| Number of states       | Usually fewer   | May require more |
-| Output representation  | `input/output`  | `state/output`   |
+| Feature                | Mealy Machine   | Moore Machine  |
+| ---------------------- | --------------- | -------------- |
+| Output depends on      | State + Input   | State          |
+| Output associated with | Transition      | State          |
+| Output changes         | With transition | With state     |
+| Number of states       | Usually fewer   | Usually more   |
+| Representation         | Input / Output  | State / Output |
 
 ---
 
 # 🖥️ Application Screenshots
 
-> Add your project output screenshots in the spaces provided below.
+## 🏠 1. Dashboard
 
-## 1. Dashboard
+The dashboard provides an overview of the simulator and quick access to the available modules.
 
-**Output Screenshot:**
-
-📷 **[ Add Dashboard Screenshot Here ]**
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                    DASHBOARD SCREENSHOT                      │
-│                                                              │
-│              Insert your screenshot here                    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./screenshots/dashboard.png" alt="Dashboard" width="900">
+</p>
 
 ---
 
-## 2. Machine Builder
+## 🛠️ 2. Machine Builder
 
-**Output Screenshot:**
+The Machine Builder allows users to create Mealy and Moore machines by defining states and transitions.
 
-📷 **[ Add Machine Builder Screenshot Here ]**
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                  MACHINE BUILDER SCREENSHOT                  │
-│                                                              │
-│              Insert your screenshot here                    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./screenshots/machine-builder.png" alt="Machine Builder" width="900">
+</p>
 
 ---
 
-## 3. Simulator
+## ▶️ 3. Simulator
 
-**Output Screenshot:**
+The Simulator allows users to enter an input string and execute the selected finite-state machine.
 
-📷 **[ Add Simulator Screenshot Here ]**
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                    SIMULATOR SCREENSHOT                      │
-│                                                              │
-│              Insert your screenshot here                    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./screenshots/simulator.png" alt="Simulator" width="900">
+</p>
 
 ---
 
-## 4. Simulation Result
+## 📊 4. Simulation Result
 
-**Output Screenshot:**
+The simulation result displays the execution steps, state transitions, generated output, and final result.
 
-📷 **[ Add Simulation Result Screenshot Here ]**
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                 SIMULATION RESULT SCREENSHOT                 │
-│                                                              │
-│              Insert your screenshot here                    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./screenshots/simulation-result.png" alt="Simulation Result" width="900">
+</p>
 
 ---
 
-## 5. Conversion Lab
+## 🔄 5. Conversion Lab
 
-**Output Screenshot:**
+The Conversion Lab demonstrates the conversion of a Mealy Machine into a Moore Machine.
 
-📷 **[ Add Conversion Screenshot Here ]**
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                   CONVERSION LAB SCREENSHOT                  │
-│                                                              │
-│              Insert your screenshot here                    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./screenshots/conversion.png" alt="Conversion Lab" width="900">
+</p>
 
 ---
 
-## 6. Compare Machines
+## ⚖️ 6. Compare Machines
 
-**Output Screenshot:**
+The Compare Machines module allows users to compare two finite-state machines.
 
-📷 **[ Add Comparison Screenshot Here ]**
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                  COMPARE MACHINES SCREENSHOT                 │
-│                                                              │
-│              Insert your screenshot here                    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./screenshots/comparison.png" alt="Compare Machines" width="900">
+</p>
 
 ---
 
-## 🗂️ Project Structure
+# 🛠️ Technologies Used
+
+* **React**
+* **Vite**
+* **JavaScript**
+* **HTML5**
+* **CSS3**
+* **Lucide React**
+
+---
+
+# 📂 Project Structure
 
 ```text
 mealy-moore-simulator/
 │
 ├── public/
-│   ├── favicon.svg
-│   └── icons.svg
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── machine-builder.png
+│   ├── simulator.png
+│   ├── simulation-result.png
+│   ├── conversion.png
+│   └── comparison.png
 │
 ├── src/
-│   ├── assets/
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
-│   │
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
@@ -301,17 +238,6 @@ mealy-moore-simulator/
 
 ---
 
-# 🛠️ Technologies Used
-
-* **React**
-* **Vite**
-* **JavaScript**
-* **CSS**
-* **Lucide React**
-* **HTML5**
-
----
-
 # ⚙️ Installation
 
 ### 1. Clone the repository
@@ -320,7 +246,7 @@ mealy-moore-simulator/
 git clone <https://github.com/prachi-ankush-3/mealy-moore-machine-simulator.git>
 ```
 
-### 2. Open the project
+### 2. Navigate to the project
 
 ```bash
 cd mealy-moore-simulator
@@ -338,7 +264,7 @@ npm install
 npm run dev
 ```
 
-The application will be available at the local URL displayed by Vite, usually:
+The application will normally run at:
 
 ```text
 http://localhost:5173
@@ -348,14 +274,18 @@ http://localhost:5173
 
 # 🚀 How to Use
 
-### Step 1 — Create a Machine
+### Step 1 — Open Dashboard
 
-Open **Machine Builder** and select:
+Launch the application and open the Dashboard.
+
+### Step 2 — Create a Machine
+
+Go to **Machine Builder** and select either:
 
 * Mealy Machine
 * Moore Machine
 
-### Step 2 — Add States
+### Step 3 — Add States
 
 Create states such as:
 
@@ -365,82 +295,44 @@ q1
 q2
 ```
 
-Set the required initial/final states.
+Set the required initial and final states.
 
-### Step 3 — Add Transitions
+### Step 4 — Add Transitions
 
-Define transitions using the required input symbols.
-
-For a Mealy machine:
+For a Mealy machine, define:
 
 ```text
 Input / Output
 ```
 
-For example:
+Example:
 
 ```text
 0 / 1
 1 / 0
 ```
 
-### Step 4 — Validate
+### Step 5 — Validate
 
-Use the validation functionality to identify:
+Validate the machine to identify invalid or incomplete configurations.
 
-* Missing transitions
-* Duplicate state names
-* Invalid symbols
-* Missing initial state
-* Unreachable states
-* Conflicting transitions
+### Step 6 — Simulate
 
-### Step 5 — Simulate
-
-Enter an input string such as:
+Enter an input string, for example:
 
 ```text
 010101
 ```
 
-Run the simulation to view the generated output and execution steps.
+Run the simulation and observe the generated output.
 
-### Step 6 — Convert
+### Step 7 — Convert
 
 Open **Conversion Lab** to convert a Mealy machine into a Moore machine.
 
-### Step 7 — Compare
+### Step 8 — Compare
 
-Use **Compare Machines** to analyze two machines side-by-side.
-
----
-
-# 📊 Example
-
-### Mealy Machine
-
-```text
-States:
-q0, q1
-
-Input Alphabet:
-0, 1
-
-Transitions:
-
-q0 -- 0/0 --> q0
-q0 -- 1/1 --> q1
-q1 -- 0/1 --> q0
-q1 -- 1/0 --> q1
-```
-
-For input:
-
-```text
-1010
-```
-
-The simulator processes each input symbol and generates the corresponding output sequence.
+Use **Compare Machines** to compare two machines.
 
 ---
 
@@ -459,22 +351,21 @@ The main objectives of this project are:
 
 # 🔮 Future Scope
 
-The project can be extended with:
+The project can be further extended with:
 
 * Moore → Mealy conversion
 * DFA/NFA simulator
-* Regular expression to automata conversion
-* State diagram export as image
+* Regular Expression → Automata conversion
+* DFA minimization
+* State diagram export
 * Advanced equivalence checking
-* Machine minimization
-* Dark/light theme customization
-* Cloud-based machine storage
 * User authentication
-* More detailed graph visualization
+* Cloud storage
+* More automata algorithms
 
 ---
 
-# 🎓 Academic Use
+# 🎓 Academic Application
 
 This project can be used for:
 
@@ -483,7 +374,8 @@ This project can be used for:
 * Finite State Machines
 * Computer Science Laboratory
 * Micro Projects
-* Demonstrations and Viva
+* Academic Demonstrations
+* Viva Presentations
 
 ---
 
@@ -498,12 +390,10 @@ Vishwakarma Institute of Technology, Pune
 
 ## ⭐ Project
 
-**Mealy–Moore Machine Simulator**
-
-> An interactive way to learn, build, simulate, convert, and compare finite-state machines.
+> **An interactive way to learn, build, simulate, convert, and compare finite-state machines.**
 
 ---
 
 ## 📄 License
 
-This project is created for educational and academic purposes.
+This project is developed for educational and academic purposes.
