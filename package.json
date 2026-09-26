@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite --host 0.0.0.0",
+  "build": "vite build",
+  "lint": "oxlint",
+  "preview": "vite preview --host 0.0.0.0"
+},
   "dependencies": {
     "lucide-react": "^1.45.0",
     "react": "^19.2.8",
