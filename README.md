@@ -11,14 +11,7 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 </p>
 
-<p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-screenshots">Screenshots</a> •
-  <a href="#-technology-stack">Tech Stack</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-usage">Usage</a> •
-  <a href="#-future-scope">Future Scope</a>
-</p>
+
 
 ---
 
