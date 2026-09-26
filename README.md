@@ -18,9 +18,9 @@
 ## 🌐 Live Demo
 
 > 🚀 **Deployed Project:**
-> **[Add your live deployment link here]**
 
-🔗 **Live Demo:** `____________________________________________`
+
+🔗 **Live Demo:** https://mealy-moore-machine-simulator.onrender.com/
 
 ---
 
